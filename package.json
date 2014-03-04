@@ -1,9 +1,9 @@
 {
     "name": "node-oo",
     "preferGlobal": false,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Marcel Rieger <marcelrieger@me.com>",
-    "description": "Port of John Resig's lightweight OO model to Nodejs extended by useful OO features.",
+    "description": "Port of John Resig's lightweight OO model to Nodejs extended by common OO features.",
     "main": "./lib/class.min.js",
     "repository": {
         "type": "git",
