@@ -1,0 +1,25 @@
+{
+    "name": "node-oo",
+    "preferGlobal": false,
+    "version": "0.0.1",
+    "author": "Marcel Rieger <marcelrieger@me.com>",
+    "description": "Port of John Resig's lightweight OO model to Nodejs extended by useful OO features.",
+    "main": "./lib/class.min.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/riga/node-oo.git"
+    },
+    "keywords": [
+        "john",
+        "resig",
+        "javascript",
+        "inheritance",
+        "class",
+        "oo"
+    ],
+    "dependencies" : {},
+    "license": "MIT/GPLv2",
+    "engines": {
+        "node": ">=0.6"
+    }
+}

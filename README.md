@@ -1,4 +1,4 @@
-node-class
+node-oo
 ==========
 
-Port of John Resig's Class model to Nodejs extended by useful IO features.
+Port of John Resig's lightweight OO model to Nodejs extended by useful OO features.
