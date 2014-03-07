@@ -1,7 +1,7 @@
 {
     "name": "node-oo",
     "preferGlobal": false,
-    "version": "0.0.6",
+    "version": "0.1.0",
     "author": "Marcel Rieger <marcelrieger@me.com>",
     "description": "Port of John Resig's lightweight OO model to Nodejs extended by common OO features.",
     "main": "./lib/class.min.js",
@@ -17,11 +17,9 @@
         "class",
         "oo"
     ],
-    "dependencies" : {
-        "node.extend": ">= 1.0.9"
-    },
+    "dependencies" : {},
     "license": "MIT/GPLv2",
     "engines": {
-        "node": ">=0.6"
+        "node": ">= 0.8"
     }
 }
