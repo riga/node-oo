@@ -1,5 +1,5 @@
 /*!
- * node-oo module v1.1.0
+ * node-oo module v1.1.1
  * https://github.com/riga/node-oo
  *
  * Marcel Rieger, 2014
@@ -14,7 +14,6 @@
 (function(factory) {
   if (typeof define === "function" && define.amd) {
     // AMD
-    console.log("AMD");
     define(factory);
   } else if (typeof exports === "object") {
     // CommonJS
