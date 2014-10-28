@@ -1,5 +1,5 @@
 /*!
- * node-oo module v1.1.1
+ * node-oo module v1.2.0
  * https://github.com/riga/node-oo
  *
  * Marcel Rieger, 2014
@@ -54,7 +54,7 @@
   Class._extend = function(instanceProps, classProps, opts) {
 
     instanceProps = instanceProps || {};
-    classProps    = classProps || {};
+    classProps    = classProps    || {};
 
     var _opts = {};
     Object.keys(defaultOpts).forEach(function(key) {
@@ -71,9 +71,8 @@
       this._class = SubClass;
       // all construction is actually done in the init method
       if (!classInitializing && this.init) {
-        return this.init.apply(this, arguments);
+        this.init.apply(this, arguments);
       }
-      return this;
     };
 
     var _super = this.prototype;
@@ -184,14 +183,14 @@
 
 
   // converts arbitrary protoype-style classes to our Class definition
-  Class._convert = function(cls, name, opts) {
+  Class._convert = function(cls, opts) {
+    var name = "__ClassProto";
 
     // create properties, starting with the init function required by Class
     var instanceProps = {
       init: function() {
-        var args = Array.prototype.slice.call(arguments);
         // simply create an instance of our target class
-        this[name] = Class._construct(cls, args);
+        this[name] = Class._construct(cls, arguments);
       }
     };
 
