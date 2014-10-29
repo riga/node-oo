@@ -16,7 +16,7 @@ npm install node-oo
 
 #### Simple Inheritance
 
-```
+```javascript
 var Class = require("node-oo");
 
 var Cat = Class._extend({
@@ -64,7 +64,7 @@ grumpy.getColor(); // "greyish", same as grumpy.color
 
 #### Class members
 
-```
+```javascript
 var Class = require("node-oo");
 
 var Cat = Class._extend({
@@ -101,7 +101,7 @@ Cat.getFamily()); // "Felidae", same as Cat.family
 
 You can convert classed that are based on prototypes into node-oo classes.
 
-```
+```javascript
 // example using nodejs
 
 var Class        = require("node-oo");
