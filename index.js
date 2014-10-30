@@ -1,5 +1,5 @@
 /*!
- * node-oo module v1.2.0
+ * node-oo module v1.2.3
  * https://github.com/riga/node-oo
  *
  * Marcel Rieger, 2014

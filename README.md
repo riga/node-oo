@@ -1,7 +1,8 @@
 # node-oo
 
 Port of John Resig's lightweight OO model to Nodejs extended by common OO features.
-
+This module has no dependencies and works in most common module environments:
+RequireJS (AMD), CommonJS, NodeJs and even in the Browser!
 
 ## Installation
 
