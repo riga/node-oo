@@ -17,11 +17,10 @@
     define(factory);
   } else if (typeof exports === "object") {
     // CommonJS
-    if (typeof module === "object" && typeof module.exports === "object") {
+    exports = factory();
+    if (typeof module === "object") {
       // nodejs
-      module.exports = factory();
-    } else {
-      exports = factory();
+      module.exports = exports;
     }
   } else if (window) {
     // Browser globals
