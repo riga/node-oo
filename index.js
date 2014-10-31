@@ -1,5 +1,5 @@
 /*!
- * node-oo module v1.2.3
+ * node-oo module v1.2.4
  * https://github.com/riga/node-oo
  *
  * Marcel Rieger, 2014
@@ -14,7 +14,7 @@
 (function(factory) {
   if (typeof define === "function" && define.amd) {
     // AMD
-    define(factory);
+    define([], factory);
   } else if (typeof exports === "object") {
     // CommonJS
     exports = factory();
@@ -195,12 +195,21 @@
 
     // create wrappers for all members and bind them
     Object.keys(cls.prototype).forEach(function(member) {
+      // note: the init function should not be overwritten!
       if (member == "init") {
         return;
       }
-      instanceProps[member] = function() {
-        return this[name][member].apply(this[name], arguments);
-      };
+
+      // function or not?
+      if (typeof cls.prototype[member] === "function") {
+        // function => create a wrapper
+        instanceProps[member] = function() {
+          return this[name][member].apply(this[name], arguments);
+        };
+      } else {
+        // not a function => (shallow) copy
+        instanceProps[member] = cls.prototype[member];
+      }
     });
 
     // finally, create and return our new class

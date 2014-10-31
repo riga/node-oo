@@ -1,7 +1,7 @@
 {
     "name": "node-oo",
     "preferGlobal": false,
-    "version": "1.2.3",
+    "version": "1.2.4",
     "author": "Marcel Rieger <marcelrieger@me.com>",
     "description": "Port of John Resig's lightweight OO model to Nodejs extended by common OO features.",
     "main": "./index.js",
